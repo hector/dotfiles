@@ -1,0 +1,49 @@
+[user]
+	name = Hector Parra
+	email = wizbcn@gmail.com
+	
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+	pager = true
+	
+[alias] 
+	s = status
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	w = whatchanged
+	# Log related
+	ld = log --decorate
+	lld = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative	
+	
+[core]
+	autocrlf = input
+	excludesfile = /Users/hector/.gitignore
+	quotepath = false
+	
+[mergetool "deltawalker"]
+	cmd = "/Applications/DeltaWalker.app/Contents/MacOS/bzr-git-merge" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[mergetool "diffmerge"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = false
+	keepBackup = false
+	keepTemporaries = false
+	
+[merge]
+	tool = diffmerge
+	keepBackup = false	
+	
+[difftool "diffmerge"]
+	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge \"$LOCAL\" \"$REMOTE\""
+		
+[diff]
+	#external = "/Applications/DeltaWalker.app/Contents/MacOS/git-diff"

@@ -1,0 +1,5 @@
+-b
+--colour
+--require fuubar
+--format Fuubar
+--drb
