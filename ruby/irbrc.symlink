@@ -7,11 +7,11 @@ IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 # Load gems
-%w[rubygems looksee/shortcuts hirb wirble].each do |gem|
+%w[rubygems looksee hirb wirble].each do |gem|
   begin
     require gem
   rescue LoadError => err
-    $stderr.puts "Couldn't load #{lib}: #{err}"
+    $stderr.puts "Couldn't load #{gem}: #{err}"
   end
 end
 
