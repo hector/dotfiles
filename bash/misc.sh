@@ -9,4 +9,5 @@ export HISTFILESIZE=3000
 
 #SOURCES
 # Load user script extensions
-[[ -s "$HOME/.scripts" ]] &&  for f in $HOME/.scripts/*; do source $f; done
+[[ -s "$HOME/.scripts/*" ]] &&  for f in $HOME/.scripts/*; do source $f; done
+
