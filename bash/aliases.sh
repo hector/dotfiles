@@ -27,8 +27,8 @@ alias sed='sed -E'
 alias diff="colordiff"
 
 # dotfiles aliases
-alias dotmate='mate $BASH'
-alias dotcd='cd $BASH'
+alias dotmate='mate $DOTFILES'
+alias dotcd='cd $DOTFILES'
 alias reload!='. ~/.bashrc'
 
 # custom generated aliases
