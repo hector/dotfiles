@@ -4,6 +4,9 @@
 export HISTCONTROL=ignoredups # ignore duplicate bash history commands
 export HISTFILESIZE=3000
 
+# MYSQL
+[[ -s "/usr/local/mysql/bin" ]] && export PATH=/usr/local/mysql/bin:$PATH
+
 #PATH
 [[ -s "$HOME/.bin" ]] && export PATH=$HOME/.bin/:$PATH
 
