@@ -7,7 +7,7 @@ export DOTFILES=$HOME/.dotfiles
 export PROJECTS=~/code
 
 # source every .sh file in this rep
-for config_file in $DOTFILES/**/*.sh; do source $config_file; done
+for script in $(find $DOTFILES -type f -name "*.sh"); do source $script; done
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
