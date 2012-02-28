@@ -512,9 +512,9 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>586 519 214 309 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>411 886 924 485 0 0 2560 1418 </string>
+	<string>194 900 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1270 480 1129 642 0 0 2560 1418 </string>
+	<string>1280 4 1280 1414 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -609,11 +609,11 @@
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.2818397581577301</real>
+				<real>0.32608750462532043</real>
 				<key>Green Component</key>
 				<real>1</real>
 				<key>Red Component</key>
-				<real>0.5866057276725769</real>
+				<real>0.59782332181930542</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -717,7 +717,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>80</integer>
+			<integer>120</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -1056,7 +1056,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>25</integer>
+			<integer>40</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
