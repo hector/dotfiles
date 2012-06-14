@@ -5,4 +5,4 @@
 
 export DROPBOX=$HOME/Dropbox
 
-[[ -s "$DROPBOX/.dotfiles/**/*.sh" ]] &&  for f in $DROPBOX/.dotfiles/**/*.sh; do source $f; done
+[[ -s "$DROPBOX/.dotfiles" ]] &&  for script in $(find "$DROPBOX/.dotfiles" -type f -name "*.sh"); do source $script; done 

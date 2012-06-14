@@ -8,9 +8,8 @@ export HISTFILESIZE=3000
 [[ -s "/usr/local/mysql/bin" ]] && export PATH=/usr/local/mysql/bin:$PATH
 
 #PATH
-[[ -s "$HOME/.bin" ]] && export PATH=$HOME/.bin/:$PATH
+[[ -s "$HOME/.bin" ]] && export PATH=$HOME/.bin:$PATH
 
 #SOURCES
 # Load user script extensions
-[[ -s "$HOME/.scripts/*" ]] &&  for f in $HOME/.scripts/*; do source $f; done
-
+[[ -s "$HOME/scripts" ]] && for script in $(find "$HOME/.scripts" -type f -name "*.sh"); do source $script; done
