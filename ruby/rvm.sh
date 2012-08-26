@@ -1,6 +1,6 @@
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-# RVM completion
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+if [ -d "$HOME/.rvm" ]; then
+	echo 'sadfsadfasdfasdfasdf'
+	PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+	[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion # RVM completion
+fi
