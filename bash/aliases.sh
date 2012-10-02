@@ -25,11 +25,17 @@ alias mv="mv -i"
 alias slink="ln -s"
 alias sed='sed -E'
 alias diff="colordiff"
+alias less="less -R"
+
+# internet aliases
+alias myip='curl ifconfig.me/ip'
+alias myhost='curl ifconfig.me/host'
+alias myinternet='curl ifconfig.me/all'
 
 # dotfiles aliases
 alias dotmate='mate $DOTFILES'
 alias dotcd='cd $DOTFILES'
 alias reload!='. ~/.bashrc'
 
-# custom generated aliases
+# misc
 alias unzipall="ls *.zip | xargs -n1 unzip -o"
