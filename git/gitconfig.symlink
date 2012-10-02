@@ -26,6 +26,7 @@
 	autocrlf = input
 	excludesfile = /Users/hector/.gitignore
 	quotepath = false
+	editor = mate -w
 	
 [mergetool "deltawalker"]
 	cmd = "/Applications/DeltaWalker.app/Contents/MacOS/bzr-git-merge" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
