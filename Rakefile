@@ -15,9 +15,9 @@ task :ssh do
   ssh_dropbox = File.join(ENV["DROPBOX"], ".dotfiles", ".ssh")
   ssh_home = File.join(ENV["HOME"], ".ssh")
   
-  if !Dir.exists? ssh_dropbox
+  if !File.directory? ssh_dropbox
     puts "#{ssh_dropbox} does not exist! You must create it first"
-  elsif Dir.exists? ssh_home
+  elsif File.directory? ssh_home
     puts "#{ssh_home} is present! Move all desired items to #{ssh_dropbox} and remove this directory"
   else
     `ln -s "#{ssh_dropbox}" "#{ssh_home}"`
