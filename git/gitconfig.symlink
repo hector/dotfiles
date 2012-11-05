@@ -28,23 +28,10 @@
 	quotepath = false
 	editor = mate -w
 	
-[mergetool "deltawalker"]
-	cmd = "/Applications/DeltaWalker.app/Contents/MacOS/bzr-git-merge" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
-	keepTemporaries = false
-	trustExitCode = false
-	keepBackup = false
-[mergetool "diffmerge"]
-	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-	trustExitCode = false
-	keepBackup = false
-	keepTemporaries = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 	
-[merge]
-	tool = diffmerge
-	keepBackup = false	
-	
-[difftool "diffmerge"]
-	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge \"$LOCAL\" \"$REMOTE\""
-		
-[diff]
-	#external = "/Applications/DeltaWalker.app/Contents/MacOS/git-diff"
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
