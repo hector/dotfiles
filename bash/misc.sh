@@ -13,3 +13,7 @@ export HISTFILESIZE=3000
 #SOURCES
 # Load user script extensions
 [[ -s "$HOME/scripts" ]] && for script in $(find "$HOME/.scripts" -type f -name "*.sh"); do source $script; done
+
+#LOCALE
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
