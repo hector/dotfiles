@@ -16,3 +16,11 @@ alias pip_ls="pip search . | egrep -B1 'INSTALLED|LATEST'"
 # if [ -d "/usr/local/lib/python2.6/site-packages" ]; then
 # 	PYTHONPATH=/usr/local/lib/python2.6/site-packages:$PYTHONPATH
 # fi
+
+########### Essentia exports ###########
+if [ -d /essentia/third_party]; then
+	export ESSENTIA_THIRDPARTY=/essentia/third_party
+	export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ESSENTIA_THIRDPARTY/lib
+	export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$ESSENTIA_THIRDPARTY/pkgconfig
+fi
+
