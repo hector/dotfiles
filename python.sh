@@ -16,3 +16,6 @@ alias pip_ls="pip search . | egrep -B1 'INSTALLED|LATEST'"
 # if [ -d "/usr/local/lib/python2.6/site-packages" ]; then
 # 	PYTHONPATH=/usr/local/lib/python2.6/site-packages:$PYTHONPATH
 # fi
+
+# added by Anaconda 1.5.1 installer
+[[ -d $HOME/.anaconda/bin ]] && export PATH="$HOME/.anaconda/bin:$PATH"
