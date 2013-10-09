@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias pylab='ipython --pylab'
+
 # Pythonbrew import
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
