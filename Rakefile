@@ -30,7 +30,7 @@ task :default => 'install'
 private
 
 def link_dir(dir = Dir.pwd)
-  symlinks = File.join(dir, "*", "**{.symlink}")
+  symlinks = File.join(dir, "**", "*{.symlink}")
   linkables = Dir.glob(symlinks)
 
   skip_all = false
