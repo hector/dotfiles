@@ -8,6 +8,7 @@ config windowHintsIgnoreHiddenWindows	false
 config windowHintsShowIcons 			true
 config windowHintsSpread 				true
 config windowHintsDuration				5
+config menuBarIconHidden				true
 
 # Abstract bindings
 alias hyper 	ctrl;alt;cmd
@@ -52,4 +53,4 @@ bind esc:ctrl grid padding:5 0:6,2 1:8,3
 
 # More
 bind r:${hyper} relaunch # Relaunch slate
-bind z:${hyper} undo # Undo the last vinding triggered
+bind z:${hyper} undo # Undo the last binding triggered
