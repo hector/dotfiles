@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias pylab='ipython --pylab'
+alias pylab='ipython --pylab=osx'
 # Alias for listing eggs and if new versions exist
 alias pip_ls="pip search . | egrep -B1 'INSTALLED|LATEST'"
 
