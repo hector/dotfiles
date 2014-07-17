@@ -24,3 +24,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # TeX
 [[ -s "/usr/textbin" ]] && export PATH=$PATH:/usr/textbin
 
+# GNUPLOT
+# export GNUTERM=x11   # X windows must be installed
+export GNUTERM=qt    # gnuplot must have been compiled with Qt support
+# export GNUTERM=aqua  # if you are using Aquaterm
