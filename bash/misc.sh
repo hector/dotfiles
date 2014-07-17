@@ -20,3 +20,7 @@ export LC_ALL=en_US.UTF-8
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# TeX
+[[ -s "/usr/textbin" ]] && export PATH=$PATH:/usr/textbin
+
