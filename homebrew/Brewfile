@@ -1,0 +1,12 @@
+# Run `brew bundle Brewfile`
+
+update
+install bash-completion
+install git
+install node
+install python
+install rbenv
+install rbenv-gem-hash
+install rbenv-use
+install ruby-build
+install wget

@@ -1,0 +1,5 @@
+# Run `brew bundle Caskfile-games`
+
+cask install dolphin
+cask install openemu
+cask install xbox360-controller-driver

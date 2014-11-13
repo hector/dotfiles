@@ -1,0 +1,9 @@
+# Run `brew bundle Brewfile-ruby`
+
+update
+install rbenv
+install rbenv-gem-hash
+install rbenv-use
+install ruby-build
+install wget
+cask install rubymine

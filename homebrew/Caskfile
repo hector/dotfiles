@@ -1,0 +1,53 @@
+# Run `brew bundle Caskfile`
+update
+
+# Install cask
+install caskroom/cask/brew-cask
+
+# Quick Look plugins
+cask install qlcolorcode
+cask install qlstephen
+cask install qlmarkdown
+cask install qlprettypatch
+cask install quicklook-json
+cask install quicklook-csv
+cask install betterzipql
+cask install webp-quicklook 
+cask install suspicious-package
+
+# Color Picker plugins
+cask install colorpicker-hex
+
+# Apps
+cask install adobe-reader
+cask install appcleaner
+cask install burn
+cask install calibre
+cask install clamxav
+cask install cyberduck
+cask install dash
+cask install dropbox
+cask install firefox
+cask install gitx-rowanj
+cask install google-chrome
+cask install google-drive
+cask install google-hangouts
+cask install iterm2
+cask install progressive-downloader
+cask install reaper
+cask install sequel-pro
+cask install skype
+cask install sonic-visualiser
+cask install sourcetree
+cask install spotify
+cask install subtitles
+cask install telegram
+cask install textmate
+cask install the-unarchiver
+cask install torbrowsercask 
+cask install utorrent
+cask install virtualbox
+cask install vlc
+
+cask install alfred
+cask alfred link

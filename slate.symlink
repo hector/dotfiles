@@ -8,7 +8,7 @@ config windowHintsIgnoreHiddenWindows	false
 config windowHintsShowIcons 			true
 config windowHintsSpread 				true
 config windowHintsDuration				5
-config menuBarIconHidden				true
+#config menuBarIconHidden				true
 
 # Abstract bindings
 alias hyper 	ctrl;alt;cmd
