@@ -21,6 +21,7 @@ cask install colorpicker-hex
 # Apps
 cask install adobe-reader
 cask install appcleaner
+cask install betterzip
 cask install burn
 cask install calibre
 cask install clamxav
@@ -33,6 +34,7 @@ cask install google-chrome
 cask install google-drive
 cask install google-hangouts
 cask install iterm2
+cask install keka
 cask install progressive-downloader
 cask install reaper
 cask install sequel-pro
