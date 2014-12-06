@@ -2,8 +2,7 @@
 
 update
 install rbenv
-install rbenv-gem-hash
+install rbenv-gem-rehash
 install rbenv-use
 install ruby-build
-install wget
 cask install rubymine
