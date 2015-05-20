@@ -26,6 +26,7 @@ alias slink="ln -s"
 alias sed='sed -E'
 alias diff="colordiff"
 alias less="less -R"
+alias grep="grep --color=auto"
 
 # internet aliases
 alias myip='curl ifconfig.me/ip'

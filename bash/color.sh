@@ -20,5 +20,4 @@ export COLOR_GRAY="\033[0;30m"
 export COLOR_LIGHT_GRAY="\033[0;37m"
 
 export CLICOLOR=1 #enable colors
-export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32" #highlight grep matches with gren
 #export LSCOLORS="Exfxgxdxcxegedabagacadw"
