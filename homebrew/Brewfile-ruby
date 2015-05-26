@@ -2,7 +2,10 @@
 
 update
 install rbenv
+install ruby-build
 install rbenv-gem-rehash
 install rbenv-use
-install ruby-build
+install rbenv-vars
+install rbenv-communal-gems
+install rbenv-bundle-exec
 cask install rubymine
