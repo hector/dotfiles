@@ -8,11 +8,13 @@ config windowHintsIgnoreHiddenWindows	false
 config windowHintsShowIcons 			true
 config windowHintsSpread 				true
 config windowHintsDuration				5
+orderScreensLeftToRight         true
 #config menuBarIconHidden				true
 
 # Abstract bindings
 alias hyper 	ctrl;alt;cmd
 alias hyper2 	shift;ctrl;alt
+alias hyper3  shift;alt;cmd
 
 # Abstract positions
 alias full 			move 	screenOriginX;screenOriginY screenSizeX;screenSizeY
@@ -37,6 +39,10 @@ bind up:${hyper2}		chain ${topleft} | ${topright}
 bind right:${hyper2}	chain ${topright} | ${bottomright}
 bind down:${hyper2}		chain ${bottomright} | ${bottomleft}
 bind left:${hyper2}		chain ${bottomleft} | ${topleft}
+
+# Screen change bindings
+bind left:${hyper3} move  screenOriginX;screenOriginY screenSizeX;screenSizeY next
+bind right:${hyper3} move  screenOriginX;screenOriginY screenSizeX;screenSizeY previous
 
 # Focusing bindings
 bind g:${hyper} focus 'Google Chrome'
