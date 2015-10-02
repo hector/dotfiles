@@ -4,4 +4,5 @@ update
 install bash-completion
 install git
 install node
+install sshuttle
 install wget
