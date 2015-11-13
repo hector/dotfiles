@@ -1,12 +1,8 @@
 # Run `brew bundle Brewfile-ruby`
 
 update
-install rbenv
-install ruby-build
-install openssl libyaml libffi # Ruby-build recommended deps
-install rbenv-gem-rehash
-install rbenv-use
-install rbenv-vars
-install rbenv-communal-gems
-install rbenv-bundle-exec
-cask install rubymine
+install readline # recommended
+install gdbm gmp libffi # optional
+install ruby --with-doc --with-gdbm --with-gmp --with-libffi
+install chruby # manage rubies
+cask install rubymine # IDE
