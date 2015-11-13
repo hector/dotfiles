@@ -3,6 +3,7 @@
 update
 install rbenv
 install ruby-build
+install openssl libyaml libffi # Ruby-build recommended deps
 install rbenv-gem-rehash
 install rbenv-use
 install rbenv-vars
