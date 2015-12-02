@@ -2,6 +2,7 @@
 # Run `brew bundle`
 
 brew 'bash-completion'
+brew 'direnv'
 brew 'git'
 brew 'node'
 brew 'sshuttle'
