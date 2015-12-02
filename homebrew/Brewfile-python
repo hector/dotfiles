@@ -1,7 +1,7 @@
-# Run `brew bundle Brewfile-python`
+# Install `brew tap Homebrew/bundle`
+# Run `brew bundle --file=Brewfile-python`
 
-tap homebrew/python
-tap homebrew/science
-update
-install python
-cask install pycharm
+tap 'homebrew/python'
+tap 'homebrew/science'
+brew 'python'
+cask 'pycharm'

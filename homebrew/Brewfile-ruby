@@ -1,6 +1,6 @@
-# Run `brew bundle Brewfile-ruby`
+# Install `brew tap Homebrew/bundle`
+# Run `brew bundle --file=Brewfile-ruby`
 
-update
 install readline # recommended
 install gdbm gmp libffi # optional
 install ruby --with-doc --with-gdbm --with-gmp --with-libffi

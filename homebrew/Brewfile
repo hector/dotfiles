@@ -1,8 +1,8 @@
-# Run `brew bundle Brewfile`
+# Install `brew tap Homebrew/bundle`
+# Run `brew bundle`
 
-update
-install bash-completion
-install git
-install node
-install sshuttle
-install wget
+brew 'bash-completion'
+brew 'git'
+brew 'node'
+brew 'sshuttle'
+brew 'wget'

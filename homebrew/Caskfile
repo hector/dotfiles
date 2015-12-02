@@ -1,55 +1,55 @@
-# Run `brew bundle Caskfile`
-update
+# Install `brew tap Homebrew/bundle`
+# Run `brew bundle --file=Caskfile`
 
 # Install cask
-install caskroom/cask/brew-cask
+brew 'caskroom/cask/brew-cask'
 
 # Quick Look plugins
-cask install qlcolorcode
-cask install qlstephen
-cask install qlmarkdown
-cask install qlprettypatch
-cask install quicklook-json
-cask install quicklook-csv
-cask install betterzipql
-cask install webp-quicklook 
-cask install suspicious-package
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'qlprettypatch'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'betterzipql'
+cask 'webp-quicklook'
+cask 'suspicious-package'
 
 # Color Picker plugins
-cask install colorpicker-hex
+cask 'colorpicker-hex'
 
 # Apps
-cask install adobe-reader
-cask install appcleaner
-cask install betterzip
-cask install burn
-cask install calibre
-cask install clamxav
-cask install cyberduck
-cask install dash
-cask install dropbox
-cask install firefox
-cask install gitx-rowanj
-cask install google-chrome
-cask install google-drive
-cask install google-hangouts
-cask install iterm2
-cask install keka
-cask install progressive-downloader
-cask install reaper
-cask install sequel-pro
-cask install skype
-cask install sonic-visualiser
-cask install sourcetree
-cask install spotify
-cask install subtitles
-cask install telegram
-cask install textmate
-cask install the-unarchiver
-cask install torbrowsercask 
-cask install utorrent
-cask install virtualbox
-cask install vlc
+cask 'adobe-reader'
+cask 'appcleaner'
+cask 'betterzip'
+cask 'burn'
+cask 'calibre'
+cask 'clamxav'
+cask 'cyberduck'
+cask 'dash'
+cask 'dropbox'
+cask 'firefox'
+cask 'gitx-rowanj'
+cask 'google-chrome'
+cask 'google-drive'
+cask 'google-hangouts'
+cask 'iterm2'
+cask 'keka'
+cask 'progressive-downloader'
+cask 'reaper'
+cask 'sequel-pro'
+cask 'skype'
+cask 'sonic-visualiser'
+cask 'sourcetree'
+cask 'spotify'
+cask 'subtitles'
+cask 'telegram'
+cask 'textmate'
+cask 'the-unarchiver'
+cask 'torbrowsercask'
+cask 'utorrent'
+cask 'virtualbox'
+cask 'vlc'
 
-cask install alfred
-cask alfred link
+cask alfred
+#cask alfred link
