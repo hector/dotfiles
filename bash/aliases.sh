@@ -40,3 +40,4 @@ alias reload!='. ~/.bashrc'
 
 # misc
 alias unzipall="ls *.zip | xargs -n1 unzip -o"
+alias encoding="vim -c 'execute \"silent !echo \" . &fileencoding | q'"
