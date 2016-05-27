@@ -3,7 +3,7 @@
 if hash brew 2>&-; then 
 	export PATH=`brew --prefix`/bin:`brew --prefix`/sbin:$PATH
   
-  alias brew-cleanall='brew cleanup && brew purge'
+  alias brew-cleanall='brew cleanup && brew prune'
   
   export HOMEBREW_NO_ANALYTICS=1
   
