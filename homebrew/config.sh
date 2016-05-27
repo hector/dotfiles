@@ -1,9 +1,11 @@
 #!/bin/bash
 
 if hash brew 2>&-; then 
-	PATH=`brew --prefix`/bin:`brew --prefix`/sbin:$PATH
+	export PATH=`brew --prefix`/bin:`brew --prefix`/sbin:$PATH
   
   alias brew-cleanall='brew cleanup && brew purge'
+  
+  export HOMEBREW_NO_ANALYTICS=1
   
   ### Homebrew-cask
 
