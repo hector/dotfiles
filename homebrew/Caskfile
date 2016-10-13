@@ -4,6 +4,9 @@
 # Install cask
 brew 'caskroom/cask/brew-cask'
 
+# Completion
+brew 'brew-cask-completion'
+
 # Quick Look plugins
 cask 'qlcolorcode'
 cask 'qlstephen'
