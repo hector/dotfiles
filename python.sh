@@ -6,9 +6,10 @@ alias pip_ls="pip search . | egrep -B1 'INSTALLED|LATEST'"
 
 # Set virtualenvs folder for virtualenvwrapper
 if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
-	export WORKON_HOME=$HOME/.venvs
-	export PROJECT_HOME=$PROJECTS
-	source /usr/local/bin/virtualenvwrapper.sh
+  export WORKON_HOME=$HOME/.venvs
+  export PROJECT_HOME=$PROJECTS
+  export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+  source /usr/local/bin/virtualenvwrapper_lazy.sh
 fi
 
 # Pythonbrew import
