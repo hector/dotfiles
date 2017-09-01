@@ -1,6 +1,5 @@
-# Install `brew tap Homebrew/bundle`
 # Run `brew bundle --file=Caskfile-games`
 
-cask 'dolphin'
-cask 'openemu'
-cask 'xbox360-controller-driver'
+cask install dolphin
+cask install openemu
+cask install xbox360-controller-driver

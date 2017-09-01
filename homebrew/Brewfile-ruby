@@ -1,8 +1,7 @@
-# Install `brew tap Homebrew/bundle`
 # Run `brew bundle --file=Brewfile-ruby`
 
 install readline # recommended
 install gdbm gmp libffi # optional
 install ruby --with-doc --with-gdbm --with-gmp --with-libffi
 install chruby # manage rubies
-cask install rubymine # IDE
+install ruby-install # install specific rubies
