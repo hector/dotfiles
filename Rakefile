@@ -1,5 +1,11 @@
 require 'rake'
 
+HOME_DIR = ENV["HOME"] || File.absolute_path '~'
+DOTFILES_DIR = File.absolute_path('..', __FILE__)
+DROPBOX_DIR = ENV["DROPBOX"] || File.join(HOME_DIR, 'Dropbox')
+SCRIPT_EXTENSION = 'sh'
+SYMLINK_EXTENSION = 'ln'
+
 desc "Hook our dotfiles into system-standard positions."
 task :install do
   link_dir
@@ -7,14 +13,14 @@ end
 
 desc "Link .symlink files from $DROPBOX/.dotfiles into $HOME."
 task :dropbox do
-  link_dir File.join(ENV["DROPBOX"], ".dotfiles")
+  link_dir File.join(DROPBOX_DIR, ".dotfiles")
 end
 
 desc "Link .ssh directory from $DROPBOX/.dotfiles into $HOME."
 task :ssh do
-  ssh_dropbox = File.join(ENV["DROPBOX"], ".dotfiles", ".ssh")
-  ssh_home = File.join(ENV["HOME"], ".ssh")
-  
+  ssh_dropbox = File.join(DROPBOX_DIR, ".dotfiles", ".ssh")
+  ssh_home = File.join(HOME_DIR, ".ssh")
+
   if !File.directory? ssh_dropbox
     puts "#{ssh_dropbox} does not exist! You must create it first"
   elsif File.directory? ssh_home
@@ -29,19 +35,19 @@ task :default => 'install'
 
 private
 
-def link_dir(dir = Dir.pwd)
-  symlinks = File.join(dir, "**", "*{.symlink}")
-  linkables = Dir.glob(symlinks)
+def link_dir(dir = nil)
+  dir ||= File.absolute_path('..', __FILE__)
+  symlinks = Dir.glob(File.join(dir, "**", "*{.#{SYMLINK_EXTENSION}"))
 
   skip_all = false
   overwrite_all = false
   backup_all = false
 
-  linkables.each do |linkable|
+  symlinks.each do |symlink|
     overwrite = false
     backup = false
 
-    file = linkable.split('/').last.split('.').first
+    file = symlink.split('/').last.split('.').first
     target = "#{ENV["HOME"]}/.#{file}"
 
     if File.exists?(target) || File.symlink?(target)
@@ -58,6 +64,6 @@ def link_dir(dir = Dir.pwd)
       FileUtils.rm_rf(target) if overwrite || overwrite_all
       `mv "$HOME/.#{file}" "$HOME/.#{file}.backup"` if backup || backup_all
     end
-    `ln -s "#{linkable}" "#{target}"`
-  end  
+    `ln -s "#{symlink}" "#{target}"`
+  end
 end
