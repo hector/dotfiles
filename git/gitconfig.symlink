@@ -24,9 +24,10 @@
 	
 [core]
 	autocrlf = input
-	excludesfile = /Users/hector/.gitignore
+	excludesfile = ~/.gitignore
 	quotepath = false
 	editor = mate -w
+  	ignorecase = false
 
 [push]
 	default = simple
