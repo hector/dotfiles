@@ -21,3 +21,5 @@ export COLOR_LIGHT_GRAY="\033[0;37m"
 
 export CLICOLOR=1 #enable colors
 #export LSCOLORS="Exfxgxdxcxegedabagacadw"
+
+if hash grc 2>&-; then source “`brew –prefix grc`/etc/grc.bashrc”; fi

@@ -3,6 +3,7 @@
 install bash-completion
 install direnv
 install git
+install grc
 install node
 install sshuttle
 install wget
