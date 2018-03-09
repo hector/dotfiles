@@ -24,6 +24,7 @@ cask install colorpicker-hex
 cask install adobe-acrobat-reader
 cask install appcleaner
 cask install atom
+cask install avg-antivirus
 cask install betterzip
 cask install burn
 cask install calibre
@@ -46,10 +47,13 @@ cask install sequel-pro
 cask install skype
 #cask install sonic-visualiser
 cask install sourcetree
+cask install spectacle
 cask install spotify
+cask install sublime-text
 cask install telegram
 cask install textmate
 cask install the-unarchiver
+cask install toggl
 cask install torbrowser
 cask install virtualbox
 cask install vlc
