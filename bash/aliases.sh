@@ -23,7 +23,6 @@ alias rd="rmdir"
 alias df="df -h"
 alias mv="mv -i"
 alias slink="ln -s"
-alias sed='sed -E'
 alias diff="colordiff"
 alias less="less -R"
 alias grep="grep --color=auto"
@@ -34,6 +33,7 @@ alias myhost='curl ifconfig.me/host'
 alias myinternet='curl ifconfig.me/all'
 
 # dotfiles aliases
+alias dotfiles='$EDITOR $DOTFILES'
 alias dotmate='mate $DOTFILES'
 alias dotcd='cd $DOTFILES'
 alias reload!='. ~/.bashrc'

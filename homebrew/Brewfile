@@ -1,6 +1,7 @@
 # Run `brew bundle`
 
 install bash-completion
+install bash-git-prompt
 install direnv
 install git
 install grc
