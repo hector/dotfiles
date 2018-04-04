@@ -23,7 +23,6 @@ alias rd="rmdir"
 alias df="df -h"
 alias mv="mv -i"
 alias slink="ln -s"
-alias diff="colordiff"
 alias less="less -R"
 alias grep="grep --color=auto"
 

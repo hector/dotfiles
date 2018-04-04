@@ -1,64 +1,62 @@
 # Run `brew bundle --file=Caskfile`
 
 # Install cask
-install cask
+brew "cask"
 
-# Completion
-install brew-cask-completion
+# Completions
+brew "brew-cask-completion"
 
 # Quick Look plugins
-cask install qlcolorcode
-cask install qlstephen
-cask install qlmarkdown
-cask install qlprettypatch
-cask install quicklook-json
-cask install quicklook-csv
-cask install betterzipql
-cask install webpquicklook
-cask install suspicious-package
+cask "qlcolorcode"
+cask "qlstephen"
+cask "qlmarkdown"
+cask "qlprettypatch"
+cask "quicklook-json"
+cask "quicklook-csv"
+cask "betterzipql"
+cask "webpquicklook"
+cask "suspicious-package"
 
 # Color Picker plugins
-cask install colorpicker-hex
+cask "colorpicker-hex"
 
 # Apps
-cask install adobe-acrobat-reader
-cask install appcleaner
-cask install atom
-cask install avg-antivirus
-cask install betterzip
-cask install burn
-cask install calibre
-#cask install clamxav
-cask install cyberduck
-cask install dash
-cask install dropbox
-cask install firefox
-cask install flixtools
-#cask install gitx-rowanj
-cask install google-backup-and-sync
-cask install google-chrome
-cask install google-hangouts
-cask install iterm2
-cask install jetbrains-toolbox
-cask install keka
-cask install progressive-downloader
-#cask install reaper
-cask install sequel-pro
-cask install skype
-#cask install sonic-visualiser
-cask install sourcetree
-cask install spectacle
-cask install spotify
-cask install sublime-text
-cask install telegram
-cask install textmate
-cask install the-unarchiver
-cask install toggl
-cask install torbrowser
-cask install virtualbox
-cask install vlc
-cask install webtorrent
-cask install whatsapp
-
-cask install alfred
-#cask alfred link
+cask "adobe-acrobat-reader"
+#cask "alfred2"
+cask "appcleaner"
+cask "atom"
+cask "avg-antivirus"
+cask "betterzip"
+cask "burn"
+cask "calibre"
+#cask "clamxav"
+cask "cyberduck"
+cask "dash"
+cask "dropbox"
+cask "firefox"
+cask "flixtools"
+#cask "gitx-rowanj"
+cask "google-backup-and-sync"
+cask "google-chrome"
+cask "google-hangouts"
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "keka"
+cask "progressive-downloader"
+#cask "reaper"
+cask "sequel-pro"
+cask "skype"
+#cask "sonic-visualiser"
+cask "sourcetree"
+cask "spectacle"
+cask "spotify"
+cask "sublime-text"
+cask "telegram"
+cask "textmate"
+cask "the-unarchiver"
+cask "toggl"
+cask "torbrowser"
+cask "virtualbox"
+cask "vlc"
+cask "webtorrent"
+cask "whatsapp"

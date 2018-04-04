@@ -1,7 +1,14 @@
 # Run `brew bundle --file=Brewfile-ruby`
 
-install readline # recommended
-install gdbm gmp libffi # optional
-install ruby --with-doc --with-gdbm --with-gmp --with-libffi
-install chruby # manage rubies
-install ruby-install # install specific rubies
+brew "ruby"
+brew "chruby" # manage rubies
+brew "ruby-install" # install specific rubies
+
+# completions
+brew "bundler-completion"
+brew "cap-completion"
+brew "gem-completion"
+brew "rails-completion"
+brew "rake-completion"
+brew "ruby-completion"
+brew "spring-completion"

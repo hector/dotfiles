@@ -1,0 +1,4 @@
+# File for Mac App Store installations
+# https://github.com/mas-cli/mas
+
+brew "mas"

@@ -1,10 +1,14 @@
 # Run `brew bundle`
 
-install bash-completion
-install bash-git-prompt
-install direnv
-install git
-install grc
-install node
-install sshuttle
-install wget
+brew "direnv"
+brew "git"
+brew "grc"
+brew "node"
+brew "sshuttle"
+brew "wget"
+
+# completions
+brew "bash-completion"
+brew "bash-git-prompt"
+brew "launchctl-completion"
+brew "open-completion"
