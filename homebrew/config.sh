@@ -6,6 +6,7 @@ if hash brew 2>&-; then
   alias brew-cleanall='brew cleanup && brew prune && cask cleanup'
   
   export HOMEBREW_NO_ANALYTICS=1
+  export HOMEBREW_NO_AUTO_UPDATE=1
   
   ### Homebrew-cask
 
