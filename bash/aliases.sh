@@ -32,7 +32,7 @@ alias myhost='curl ifconfig.me/host'
 alias myinternet='curl ifconfig.me/all'
 
 # dotfiles aliases
-alias dotfiles='$EDITOR $DOTFILES'
+alias dotfiles='$EDITOR $DOTFILES &'
 alias dotmate='mate $DOTFILES'
 alias dotcd='cd $DOTFILES'
 alias reload!='. ~/.bashrc'
