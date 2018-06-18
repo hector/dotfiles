@@ -17,7 +17,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # other aliases
-alias ssh="ssh -X"
 alias md="mkdir -p"
 alias rd="rmdir"
 alias df="df -h"
