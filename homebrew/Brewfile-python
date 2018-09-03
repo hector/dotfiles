@@ -1,6 +1,7 @@
 # Run `brew bundle --file=Brewfile-python`
 
 brew "python"
+brew "pipenv"
 
 # completions
 brew "pip-completion"

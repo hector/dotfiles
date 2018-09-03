@@ -9,3 +9,8 @@ if [ -d "$HOME/.pyenv" ]; then
 	export PATH="$HOME/.pyenv/bin:$PATH"
 	if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 fi
+
+# pipenv completion
+if hash pipenv 2>/dev/null; then
+	eval "$(pipenv --completion)"
+fi
