@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if hash brew 2>&-; then 
+if hash brew 2>/dev/null; then 
 	export PATH=`brew --prefix`/bin:`brew --prefix`/sbin:$PATH
   
   alias brew-cleanall='brew cleanup && brew prune && cask cleanup'

@@ -30,4 +30,4 @@ export GNUTERM=qt    # gnuplot must have been compiled with Qt support
 # export GNUTERM=aqua  # if you are using Aquaterm
 
 # DIRENV
-if hash direnv 2>&-; then eval "$(direnv hook bash)"; fi
+if hash direnv 2>/dev/null; then eval "$(direnv hook bash)"; fi
