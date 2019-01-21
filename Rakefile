@@ -41,7 +41,7 @@ def link_dir(dir = Dir.pwd)
     overwrite = false
     backup = false
 
-    file = linkable.split('/').last.split('.').first
+    file = linkable.split('/').last.split('.')[0..-2].join('.')
     target = "#{ENV["HOME"]}/.#{file}"
 
     if File.exists?(target) || File.symlink?(target)
