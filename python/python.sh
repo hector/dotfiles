@@ -5,9 +5,8 @@ alias pylab='ipython --pylab=osx'
 alias pip_ls="pip search . | egrep -B1 'INSTALLED|LATEST'"
 
 # Pyenv import
-if [ -d "$HOME/.pyenv" ]; then
-	export PATH="$HOME/.pyenv/bin:$PATH"
-	if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
 fi
 
 # pipenv completion
