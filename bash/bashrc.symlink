@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
@@ -6,12 +6,20 @@ export DOTFILES=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/code
 
-# source every .sh file in this rep
-for script in $(find $DOTFILES -type f -name "*.sh" | sort -n); do source $script; done
+# source every .sh file in this repo
+for script in $(find $DOTFILES -type f -name "*.sh" | sort -n); do 
+  source $script;
+
+  # Uncomment to output load times
+  # echo "****"
+  # mytime="$(time ( source $script ) 2>&1 1>/dev/null )";
+  # echo $script
+  # echo "$mytime"
+  # echo "****"
+done
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
-if [[ -a ~/.localrc ]]
-then
+if [[ -a ~/.localrc ]]; then
   source ~/.localrc
 fi

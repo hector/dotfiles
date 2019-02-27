@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # This is needed for:
 # 1. Expo + Android Studio: https://docs.expo.io/versions/v30.0.0/workflow/android-studio-emulator.html
 # 2. React Native + Android Studio: https://facebook.github.io/react-native/docs/getting-started

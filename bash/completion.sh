@@ -1,13 +1,18 @@
-# brew install bash-completion
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+#!/usr/bin/env bash
 
-# brew install bash-git-prompt
-if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-   __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
-   source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+# https://docs.brew.sh/Shell-Completion
+if type brew &>/dev/null; then
+  for COMPLETION in $(brew --prefix)/etc/bash_completion.d/*
+  do
+    [[ -f $COMPLETION ]] && source "$COMPLETION"
+  done
+  if [[ -f $(brew --prefix)/etc/profile.d/bash_completion.sh ]];
+  then
+    source "$(brew --prefix)/etc/profile.d/bash_completion.sh"
+  fi
 fi
 
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
-  . $LUNCHY_DIR/lunchy-completion.bash
-fi
+# brew install bash-completion@2
+# If you'd like to use existing homebrew v1 completions, add the following:
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"

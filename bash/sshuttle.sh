@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # sshuttle helpers from https://github.com/teohm/dotfiles/blob/master/public/.functions.d/sshuttle.bash
 # with some personal additions

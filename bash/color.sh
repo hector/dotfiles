@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #COLORS
 export COLOR_NONE="\033[0m"

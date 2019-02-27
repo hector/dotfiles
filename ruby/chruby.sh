@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [ -d "/usr/local/opt/chruby" ]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
   # add homebrew rubies

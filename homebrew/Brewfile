@@ -1,5 +1,6 @@
 # Run `brew bundle`
 
+brew "bash" # echo /usr/local/bin/bash >> /etc/shells && chsh -s /usr/local/bin/bash
 brew "direnv"
 brew "git"
 brew "grc"
@@ -8,7 +9,7 @@ brew "sshuttle"
 brew "wget"
 
 # completions
-brew "bash-completion"
+brew "bash-completion@2"
 brew "bash-git-prompt"
 brew "launchctl-completion"
 brew "open-completion"

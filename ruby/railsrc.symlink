@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 # Called after the irb session is initialized and Rails has been loaded
 IRB.conf[:IRB_RC] = Proc.new do
   # SQL output

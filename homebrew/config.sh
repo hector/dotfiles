@@ -1,9 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if hash brew 2>/dev/null; then 
-	export PATH=`brew --prefix`/bin:`brew --prefix`/sbin:$PATH
+  # BREW_DIR=$(brew --prefix) 
+  BREW_DIR=/usr/local # having it hardcoded is faster
+  export PATH=$BREW_DIR/bin:$BREW_DIR/sbin:$PATH
   
-  alias brew-cleanall='brew cleanup && brew prune'
+  alias brew-cleanall='brew cleanup && brew cleanup --prune-prefix'
   
   export HOMEBREW_NO_ANALYTICS=1
   export HOMEBREW_NO_AUTO_UPDATE=1
