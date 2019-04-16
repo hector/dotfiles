@@ -124,7 +124,7 @@ module.exports = {
 
     // for advanced config flags please refer to https://hyper.is/#cfg
 
-    scrollback: 10000,
+    scrollback: 1000,
 
     // PLUGINS
 
