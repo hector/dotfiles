@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-# Some aliases
+# Aliases
+# https://medium.com/the-code-review/clean-out-your-docker-images-containers-and-volumes-with-single-commands-b8e38253c271
+alias docker-clean-unused='docker system prune --all --force --volumes'
+alias docker-clean-all='docker stop $(docker container ls -a -q) && docker system prune -a -f --volumes'
 # https://gist.github.com/cbrunnkvist/9e530918adfe61225b0f
 alias docker-env-eval='eval "$(docker-machine env)"'
 alias docker-machine-refresh='(docker-machine stop || docker-machine kill) ; docker-machine start; docker-env-eval'
