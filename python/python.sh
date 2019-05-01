@@ -24,4 +24,4 @@ if hash pipenv 2>/dev/null; then
   complete -F _pipenv_completion -o default pipenv
 fi
 # https://pipenv.readthedocs.io/en/latest/advanced/#custom-virtual-environment-location
-export PIPENV_VENV_IN_PROJECT=true
+#export PIPENV_VENV_IN_PROJECT=true
