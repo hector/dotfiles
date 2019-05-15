@@ -152,7 +152,7 @@ module.exports = {
     "hyper-opacity",
     "hyper-statusline",
     "hyper-alt-click",
-    "hyperterm-safepaste",
+    // "hyperterm-safepaste",
     "hyperlinks",
     "hyperterm-bold-tab"
   ],
