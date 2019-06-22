@@ -43,7 +43,6 @@ cask "webtorrent"
 cask "whatsapp"
 
 # Development
-cask "atom"
 cask "dash"
 cask "homebrew/cask-fonts/font-inconsolata"
 cask "hyper"
@@ -55,4 +54,5 @@ cask "sourcetree"
 cask "sublime-text"
 cask "textmate"
 cask "toggl"
+cask "visual-studio-code"
 cask "webstorm"
