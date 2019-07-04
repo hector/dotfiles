@@ -10,6 +10,10 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv virtualenv-init -)"
 fi
 
+# avoid doing a `pip install -r requirements.txt` on system python by accident
+# https://docs.python-guide.org/dev/pip-virtualenv/
+export PIP_REQUIRE_VIRTUALENV=true
+
 # pipenv completion
 if hash pipenv 2>/dev/null; then
   # eval "$(pipenv --completion)"
@@ -23,5 +27,6 @@ if hash pipenv 2>/dev/null; then
   }
   complete -F _pipenv_completion -o default pipenv
 fi
+
 # https://pipenv.readthedocs.io/en/latest/advanced/#custom-virtual-environment-location
 #export PIPENV_VENV_IN_PROJECT=true
