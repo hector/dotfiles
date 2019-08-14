@@ -2,7 +2,8 @@
 
 brew "python"
 brew "pipenv"
-brew "pipenv-virtualenv"
+brew "pyenv"
+brew "pyenv-virtualenv"
 
 # completions
 brew "pip-completion"
