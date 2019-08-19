@@ -46,6 +46,7 @@ cask "whatsapp"
 # Development
 cask "dash"
 cask "homebrew/cask-fonts/font-inconsolata"
+cask "homebrew/cask-fonts/font-hack-nerd-font"
 cask "hyper"
 cask "iterm2"
 cask "postico"
