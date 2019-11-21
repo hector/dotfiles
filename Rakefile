@@ -1,31 +1,44 @@
 require 'rake'
 
+desc "Install everything."
+task "install" do
+  Rake::Task["install:dotfiles"].invoke
+  Rake::Task["install:vault"].invoke
+end
+
 desc "Hook our dotfiles into system-standard positions."
-task :install do
+task "install:dotfiles" do
   link_dir
 end
 
-desc "Link .symlink files from $DROPBOX/.dotfiles into $HOME."
-task :dropbox do
-  link_dir File.join(ENV["DROPBOX"], ".dotfiles")
+task "install:vault" do
+  Rake::Task["install:vault:dotfiles"].invoke
+  Rake::Task["install:vault:ssh"].invoke
 end
 
-desc "Link .ssh directory from $DROPBOX/.dotfiles into $HOME."
-task :ssh do
-  ssh_dropbox = File.join(ENV["DROPBOX"], ".dotfiles", ".ssh")
+desc "Link .symlink files from ~/.vault/.dotfiles into $HOME."
+task "install:vault:dotfiles" do
+  vault_dotfiles_dir = File.join(vault_dir, ".dotfiles")
+  return unless dir_exists? vault_dorfiles_dir
+  link_dir vault_dotfiles_dir
+end
+
+desc "Link .ssh directory from ~/.vault/.ssh into $HOME."
+task "install:vault:ssh" do
+  ssh_vault = File.join vault_dir, ".ssh"
   ssh_home = File.join(ENV["HOME"], ".ssh")
   
-  if !File.directory? ssh_dropbox
-    puts "#{ssh_dropbox} does not exist! You must create it first"
+  if !File.directory? ssh_vault
+    puts "#{ssh_vault} does not exist! You must create it first"
   elsif File.directory? ssh_home
-    puts "#{ssh_home} is present! Move all desired items to #{ssh_dropbox} and remove this directory"
+    puts "#{ssh_home} is present! Move all desired items to #{ssh_vault} and remove this directory"
   else
-    `ln -s "#{ssh_dropbox}" "#{ssh_home}"`
+    `ln -s "#{ssh_vault}" "#{ssh_home}"`
     puts "SSH directory linked!"
   end
 end
 
-task :default => 'install'
+task :default => "install"
 
 private
 
@@ -60,4 +73,14 @@ def link_dir(dir = Dir.pwd)
     end
     `ln -s "#{linkable}" "#{target}"`
   end  
+end
+
+def dir_exists? dir
+  exists = !File.directory?(dir)
+  puts "#{dir} does not exist! You must create it first" unless exists
+  return exists
+end
+
+def vault_dir()
+  File.join(ENV["HOME"], ".vault")
 end
