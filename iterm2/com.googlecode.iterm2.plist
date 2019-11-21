@@ -16,6 +16,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>AutoCommandHistory</key>
+	<true/>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
@@ -677,7 +679,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 306 620 392 0 0 1280 800 </string>
+	<string>290 89 700 622 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 173 918 514 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1515,9 +1517,12 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.2</string>
 		<string>3.2.9</string>
-		<string>3.3.0</string>
 		<string>3.3.1</string>
+		<string>3.3.4</string>
+		<string>3.3.0</string>
+		<string>3.3.3</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -1533,7 +1538,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>CB5E4B7B-FBD3-44CE-942E-87A753FDE00C</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>9</integer>
+	<integer>55</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1974,6 +1979,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>number</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -2222,6 +2235,16 @@
 	<array>
 		<string>factory</string>
 	</array>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>dashboard</string>
+		<string>login</string>
+		<string>osala</string>
+		<string>watch</string>
+		<string>tool</string>
+		<string>ttol</string>
+		<string>bulk</string>
+	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>572436282.75662398</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -2290,7 +2313,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-12T10:28:05Z</date>
+	<date>2019-09-25T15:36:36Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2348,6 +2371,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.1</string>
+	<string>3.3.4</string>
 </dict>
 </plist>
