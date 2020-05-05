@@ -1,0 +1,7 @@
+# Run `brew bundle --file=Brewfile-javascript`
+
+brew "node"
+brew "yarn"
+
+# completions
+brew "yarn-completion"

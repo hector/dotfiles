@@ -1,0 +1,7 @@
+# Run `brew bundle --file=Brewfile-rust`
+
+brew "rust"
+
+# completions
+brew "cargo-completion"
+brew "rustc-completion"

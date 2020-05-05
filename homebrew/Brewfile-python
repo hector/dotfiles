@@ -6,4 +6,5 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 
 # completions
+brew "django-completion"
 brew "pip-completion"

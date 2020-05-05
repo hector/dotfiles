@@ -1,21 +1,25 @@
 # Run `brew bundle`
 
-brew "bash" # echo /usr/local/bin/bash >> /etc/shells && chsh -s /usr/local/bin/bash
-brew "bash-git-prompt"
 brew "direnv"
 brew "git"
 brew "grc"
-brew "node"
 brew "sshuttle"
 brew "wget"
 
-# completions
+# bash
+brew "bash" # echo /usr/local/bin/bash >> /etc/shells && chsh -s /usr/local/bin/bash
+brew "bash-git-prompt"
 brew "bash-completion@2"
+
+# zsh
+#brew "zsh-completions"
+
+# completions
 brew "docker-completion"
 brew "docker-compose-completion"
 brew "docker-machine-completion"
 brew "launchctl-completion"
 brew "open-completion"
 
-# add rmtree command
+# add rmtree command (remove a formula and its unused dependencies)
 tap "beeftornado/rmtree"
