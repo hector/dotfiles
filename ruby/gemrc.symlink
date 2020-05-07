@@ -3,8 +3,6 @@
 :update_sources: true
 :sources: 
 - https://rubygems.org/
-- http://gems.github.com
-- http://gemcutter.org
 :bulk_threshold: 1000
 :verbose: true
 :backtrace: false
