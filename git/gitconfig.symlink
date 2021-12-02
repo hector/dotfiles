@@ -25,7 +25,7 @@
 	
 [core]
 	autocrlf = input
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/hector/.gitignore
 	quotepath = false
 	editor = code -w
   	ignorecase = false
@@ -34,7 +34,7 @@
 	default = simple
 	
 [diff]
-	tool = webstorm
+	tool = vscode
 
 [difftool]
 	prompt = false
@@ -55,7 +55,7 @@
 
 	
 [merge]
-	tool = webstorm
+	tool = vscode
 
 [mergetool]
 	prompt = false
@@ -80,3 +80,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[commit]
+	template = /Users/hector/.stCommitMsg
