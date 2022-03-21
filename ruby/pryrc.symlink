@@ -1,6 +1,5 @@
 Pry.config.pager = true
 Pry.config.color = true
-Pry.config.history.should_save = true
 
 # wrap ANSI codes so Readline knows where the prompt ends
 def colour(name, text)
@@ -36,7 +35,7 @@ begin
     output.puts value.ai
   end
 rescue LoadError => err
-  Pry.config.print = Pry::DEFAULT_PRINT
+  puts "gem install awesome_print  # <-- highly recommended"
 end
 
 # startup hooks
