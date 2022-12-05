@@ -2,4 +2,13 @@
 # https://github.com/mas-cli/mas
 
 brew "mas"
-mas "1Password"
+
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "NordVPN", id: 905953485
+mas "1Password", id: 443987910
+mas "Messenger", id: 1480068668
+mas "DigiDoc4 Client", id: 1370791134
+mas "Pages", id: 409201541
+mas "Toggl Track", id: 1291898086
+mas "Tailscale", id: 1475387142
+mas "Numbers", id: 409203825
