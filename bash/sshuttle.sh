@@ -11,7 +11,7 @@ TNL_SERVER=default_ssh
 alias tnl="sshuttle --dns -vr $TNL_SERVER 0/0"
 
 # tunnel only DNS
-alias tnldns='sshuttle --dns $TNL_SERVER 0/0'
+alias tnldns="sshuttle --dns $TNL_SERVER 0/0"
 
 # reset tunnel
 alias tnlreset='sudo ipfw -q -f flush'
