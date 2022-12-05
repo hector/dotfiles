@@ -8,10 +8,22 @@ alias pip_ls="pip search . | egrep -B1 'INSTALLED|LATEST'"
 if command -v pyenv 1>/dev/null 2>&1; then
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
+
+# Function to link homebrew python to pyenv
+# https://stackoverflow.com/a/72750989/1513130
+pyenv-brew-relink() {
+    rm -f "$HOME/.pyenv/versions/*-brew"
+    for i in $(brew --cellar)/python* ; do
+      for p in $i/*; do
+        echo $p
+        ln -s -f $p $HOME/.pyenv/versions/${p##/*/}-brew
+      done  
+    done
+    pyenv rehash
+}
 
 # avoid doing a `pip install -r requirements.txt` on system python by accident
 # https://docs.python-guide.org/dev/pip-virtualenv/
