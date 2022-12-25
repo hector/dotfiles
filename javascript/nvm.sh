@@ -57,5 +57,5 @@ cdnvm() {
         fi
     fi
 }
-alias cd='cdnvm'
+[ -s "$NVM_DIR/nvm.sh" ] && alias cd='cdnvm'
 cd $PWD

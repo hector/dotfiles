@@ -23,6 +23,12 @@ export CLICOLOR=1 #enable colors
 #export LSCOLORS="Exfxgxdxcxegedabagacadw"
 
 # Add colour aliases from grc
-[[ -s "/usr/local/etc/grc.bashrc" ]] && source /usr/local/etc/grc.bashrc
-unalias make # https://stackoverflow.com/questions/11967782/how-to-stop-gnu-make-buffering-python-output
-unalias docker
+if [[ -s "/usr/local/etc/grc.bashrc" ]]; then
+  source /usr/local/etc/grc.bashrc
+  if type make &>/dev/null; then
+    unalias make # https://stackoverflow.com/questions/11967782/how-to-stop-gnu-make-buffering-python-output
+  fi
+  if type docker &>/dev/null; then
+    unalias docker
+  fi
+fi
