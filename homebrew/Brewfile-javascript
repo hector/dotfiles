@@ -1,6 +1,7 @@
 # Run `brew bundle --file=Brewfile-javascript`
 
 brew "node"
+brew "nvm"
 brew "yarn"
 
 # completions

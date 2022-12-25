@@ -1,6 +1,8 @@
 # File for Mac App Store installations
 # https://github.com/mas-cli/mas
 
+# Run `brew bundle --file=Masfile`
+
 brew "mas"
 
 mas "Microsoft Remote Desktop", id: 1295203466
