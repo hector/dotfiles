@@ -1,27 +1,16 @@
 require 'rake'
 
+VAULT = "/Volumes/vault"
+
 desc "Hook our dotfiles into system-standard positions."
-task :install do
+task install: %w[vault:install] do
   link_dir
 end
 
-desc "Link .symlink files from $DROPBOX/.dotfiles into $HOME."
-task :dropbox do
-  link_dir File.join(ENV["DROPBOX"], ".dotfiles")
-end
-
-desc "Link .ssh directory from $DROPBOX/.dotfiles into $HOME."
-task :ssh do
-  ssh_dropbox = File.join(ENV["DROPBOX"], ".dotfiles", ".ssh")
-  ssh_home = File.join(ENV["HOME"], ".ssh")
-  
-  if !File.directory? ssh_dropbox
-    puts "#{ssh_dropbox} does not exist! You must create it first"
-  elsif File.directory? ssh_home
-    puts "#{ssh_home} is present! Move all desired items to #{ssh_dropbox} and remove this directory"
-  else
-    `ln -s "#{ssh_dropbox}" "#{ssh_home}"`
-    puts "SSH directory linked!"
+namespace :vault do 
+  desc "Hook files from the vault to the system.."
+  task :install do
+    link_dir File.join(VAULT, ".dotfiles")
   end
 end
 
@@ -30,7 +19,7 @@ task :default => 'install'
 private
 
 def link_dir(dir = Dir.pwd)
-  symlinks = File.join(dir, "**", "*{.symlink}")
+  symlinks = File.join(dir, "**", "*.symlink")
   linkables = Dir.glob(symlinks)
 
   skip_all = false
