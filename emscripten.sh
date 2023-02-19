@@ -1,5 +1,5 @@
 # Instructions from: brew install emscripten
-#export LLVM=/usr/local/opt/emscripten/libexec/llvm/bin
+#export LLVM=/opt/homebrew/opt/emscripten/libexec/llvm/bin
 
 if [ -d $HOME/.my_installs/emsdk ]; then
 	export PATH=$PATH:$HOME/.my_installs/emsdk

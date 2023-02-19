@@ -6,9 +6,9 @@ export HISTFILESIZE=3000
 
 # PROMPT
 # brew install bash-git-prompt
-if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-   __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
-   source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+if [ -f "/opt/homebrew/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+   __GIT_PROMPT_DIR="/opt/homebrew/opt/bash-git-prompt/share"
+   source "/opt/homebrew/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 
 # LOCALE

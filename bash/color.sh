@@ -23,8 +23,8 @@ export CLICOLOR=1 #enable colors
 #export LSCOLORS="Exfxgxdxcxegedabagacadw"
 
 # Add colour aliases from grc
-if [[ -s "/usr/local/etc/grc.bashrc" ]]; then
-  source /usr/local/etc/grc.bashrc
+if [[ -s "/opt/homebrew/etc/grc.bashrc" ]]; then
+  source /opt/homebrew/etc/grc.bashrc
   if type make &>/dev/null; then
     unalias make # https://stackoverflow.com/questions/11967782/how-to-stop-gnu-make-buffering-python-output
   fi
