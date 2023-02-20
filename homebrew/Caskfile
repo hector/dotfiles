@@ -3,15 +3,6 @@
 # Completions
 brew "brew-cask-completion"
 
-# Quick Look plugins
-cask "qlcolorcode"
-cask "qlstephen"
-cask "qlmarkdown"
-cask "qlprettypatch"
-cask "quicklook-json"
-cask "quicklook-csv"
-cask "webpquicklook"
-
 # Apps
 cask "appcleaner"
 cask "brave-browser"
