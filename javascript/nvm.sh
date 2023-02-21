@@ -7,17 +7,9 @@ export NVM_DIR="$HOME/.nvm"
 # Automatically call nvm use
 # https://github.com/nvm-sh/nvm#automatically-call-nvm-use
 
-find-up() {
-    path=$(pwd)
-    while [[ "$path" != "" && ! -e "$path/$1" ]]; do
-        path=${path%/*}
-    done
-    echo "$path"
-}
-
 cdnvm() {
-    cd "$@";
-    nvm_path=$(find-up .nvmrc | tr -d '\n')
+    command cd "$@" || return $?
+    nvm_path=$(nvm_find_up .nvmrc | tr -d '\n')
 
     # If there are no .nvmrc file, use the default nvm version
     if [[ ! $nvm_path = *[^[:space:]]* ]]; then
@@ -37,7 +29,7 @@ cdnvm() {
             nvm use default;
         fi
 
-        elif [[ -s $nvm_path/.nvmrc && -r $nvm_path/.nvmrc ]]; then
+    elif [[ -s $nvm_path/.nvmrc && -r $nvm_path/.nvmrc ]]; then
         declare nvm_version
         nvm_version=$(<"$nvm_path"/.nvmrc)
 
@@ -57,5 +49,5 @@ cdnvm() {
         fi
     fi
 }
-[ -s "$NVM_DIR/nvm.sh" ] && alias cd='cdnvm'
-cd $PWD
+alias cd='cdnvm'
+cd "$PWD"
