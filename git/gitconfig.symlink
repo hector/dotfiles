@@ -82,3 +82,5 @@
 	required = true
 [commit]
 	template = /Users/hector/.stCommitMsg
+[init]
+	defaultBranch = main
