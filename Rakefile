@@ -1,16 +1,18 @@
 require 'rake'
 
-VAULT = "/Volumes/vault"
+VAULT = File.expand_path("~/Cryptomator/vault")
 
 desc "Hook our dotfiles into system-standard positions."
 task install: %w[vault:install] do
   link_dir
+  puts "done"
 end
 
 namespace :vault do 
-  desc "Hook files from the vault to the system.."
+  desc "Hook files from the vault to the system."
   task :install do
     link_dir File.join(VAULT, ".dotfiles")
+    puts "done"
   end
 end
 
