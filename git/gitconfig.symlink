@@ -32,6 +32,7 @@
 
 [push]
 	default = simple
+	autoSetupRemote = true
 	
 [diff]
 	tool = vscode
