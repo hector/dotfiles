@@ -45,3 +45,6 @@ fi
 
 # https://pipenv.readthedocs.io/en/latest/advanced/#custom-virtual-environment-location
 #export PIPENV_VENV_IN_PROJECT=true
+
+# pipx
+export PATH="$PATH:/Users/hector/.local/bin"
