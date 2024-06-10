@@ -1,6 +1,7 @@
 [user]
 	name = Hector Parra
 	email = hector@parra.cat
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEL0juRgPpSSjIwqnn2pVySESr4mLs84APUsfiWoDXtr
 	
 [color]
 	diff = auto
@@ -28,7 +29,7 @@
 	excludesfile = /Users/hector/.gitignore
 	quotepath = false
 	editor = code -w
-  	ignorecase = false
+	ignorecase = false
 
 [push]
 	default = simple
@@ -83,5 +84,10 @@
 	required = true
 [commit]
 	template = /Users/hector/.stCommitMsg
+	gpgsign = true
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
