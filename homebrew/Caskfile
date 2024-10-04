@@ -29,6 +29,7 @@ cask "webtorrent"
 cask "whatsapp"
 
 # Development
+cask "cursor"
 cask "docker"
 cask "homebrew/cask-fonts/font-hack-nerd-font"
 cask "iterm2"

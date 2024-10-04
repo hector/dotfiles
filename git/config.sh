@@ -4,7 +4,8 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 
-if hash code 2>/dev/null; then export GIT_EDITOR='code -w'
+if hash cursor 2>/dev/null; then export EDITOR='cursor -w'
+elif hash code 2>/dev/null; then export EDITOR='code -w'
 elif hash subl 2>/dev/null; then export GIT_EDITOR='subl -w'
 elif hash mate 2>/dev/null; then export GIT_EDITOR="mate -w"
 elif hash nano 2>/dev/null; then export GIT_EDITOR=nano

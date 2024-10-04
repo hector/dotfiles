@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 # Set the default editor to launch for the React red box
-if hash code 2>/dev/null; then
-  export REACT_EDITOR=code
+if hash cursor 2>/dev/null; then export REACT_EDITOR='cursor -w'
+elif hash code 2>/dev/null; then export REACT_EDITOR='code -w'
+elif hash subl 2>/dev/null; then export REACT_EDITOR='subl -w'
+elif hash mate 2>/dev/null; then export REACT_EDITOR='mate -w'
 fi
 
 # https://yarnpkg.com/lang/en/docs/cli/global/

@@ -28,7 +28,7 @@
 	autocrlf = input
 	excludesfile = /Users/hector/.gitignore
 	quotepath = false
-	editor = code -w
+	editor = cursor -w
 	ignorecase = false
 
 [push]
@@ -36,7 +36,7 @@
 	autoSetupRemote = true
 	
 [diff]
-	tool = vscode
+	tool = cursor
 
 [difftool]
 	prompt = false
@@ -55,9 +55,11 @@
 [difftool "vscode"]
     cmd = code -w --diff $LOCAL $REMOTE
 
+[difftool "cursor"]
+    cmd = cursor -w --diff $LOCAL $REMOTE
 	
 [merge]
-	tool = vscode
+	tool = cursor
 
 [mergetool]
 	prompt = false
@@ -75,7 +77,10 @@
 	trustExitCode = true
 
 [mergetool "vscode"]
-    cmd = code -w $MERGED	
+    cmd = code -w $MERGED
+
+[mergetool "cursor"]
+    cmd = cursor -w $MERGED
 
 # Use git Large File storage (brew install git-lfs)
 [filter "lfs"]
