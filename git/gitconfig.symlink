@@ -29,8 +29,13 @@
 	excludesfile = /Users/hector/.gitignore
 	quotepath = false
 	editor = cursor -w
+	pager = delta # https://github.com/dandavison/delta
 	ignorecase = false
 
+[delta]
+	navigate = true
+	line-numbers = true
+	
 [push]
 	default = simple
 	autoSetupRemote = true

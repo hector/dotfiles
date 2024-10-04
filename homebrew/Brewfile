@@ -1,5 +1,6 @@
 # Run `brew bundle`
 
+brew "delta"
 brew "direnv"
 brew "git"
 brew "grc"
