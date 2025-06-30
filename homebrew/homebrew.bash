@@ -8,7 +8,6 @@ alias brew-cleanall='brew cleanup && brew cleanup --prune-prefix'
   
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_ENV_HINTS=0
   
 ### Homebrew-cask
 
