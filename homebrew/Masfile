@@ -5,12 +5,13 @@
 
 brew "mas"
 
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "NordVPN", id: 905953485
 mas "1Password", id: 443987910
-mas "Messenger", id: 1480068668
 mas "DigiDoc4 Client", id: 1370791134
-mas "Pages", id: 409201541
-mas "Toggl Track", id: 1291898086
-mas "Tailscale", id: 1475387142
+mas "Messenger", id: 1480068668
+mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Proton Authenticator", id: 6741758667
+mas "Tailscale", id: 1475387142
+mas "Toggl Track", id: 1291898086
+mas "Web eID", id: 1576665083
