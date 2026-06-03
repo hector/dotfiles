@@ -51,5 +51,5 @@ if [ -s "/opt/homebrew/opt/nvm/nvm.sh" ]; then
     fi
   }
   alias cd='cdnvm'
-  cd "$PWD"
+  cdnvm "$PWD"
 fi
